@@ -27,14 +27,26 @@
      background: azure;
      font-family: monospace;
     }
+    .card{
+      box-shadow: 0 -2px 16px 1px rgba(0,0,0,.27);
+    }
+    #aminitiescol{
+    margin-left:248px;
+    }
     @media only screen and (max-width: 600px) {
      .vintage {
     min-height: 471px; 
      }
+     #comming1{
+       width:273px;
+     }
+     #aminitiescol{
+    margin-left:0px;
+    }
   .parallax-container .section {
     position: absolute;
     top: 0%;
-}
+  }
 }
   
   
@@ -46,10 +58,12 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#aminities">Aminities</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#">FLOOR PLAN</a></li>
+        <li><a href="#">MASTER PLAN</a></li>
+        <li><a href="#aminities">AMINITIES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#location">LOCATION</a></li>
+        <li><a href="#">PRICE</a></li>
         <li><a href="tel:+919071354854" id="hi"><span style="font-weight:500; font-size: 20px; color:#0af90afc" id="hii">call:9071354854</span></a></li>
       </ul>
 
@@ -127,7 +141,8 @@
           <div class="card">
         <div class="row center">
           <h5 class="header col s12 light" style="font-weight: 600;color: black ">Gallery</h5>
-          <img src="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg" srcset="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg 614w, https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1-480x188.jpg 480w" sizes="((min-width: 0px) and (max-width: 480px)) 480px, (min-width: 481px) 614px, 100vw">
+          
+          <img src="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg" id="comming1" srcset="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg 614w, https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1-480x188.jpg 480w" sizes="((min-width: 0px) and (max-width: 480px)) 480px, (min-width: 481px) 614px, 100vw">
         </div>
       </div>
     </div>
@@ -140,7 +155,7 @@
 
   <!-- AMinities section -->
   <div class="parallax-container valign-wrapper" id="aminities" style="background: blue">
-    <div class="container" style="margin-left: 280px;">
+    <div class="container" id="aminitiescol">
      
     <h2>Aminities</h2>
    
@@ -209,31 +224,34 @@
             <h2 style="color: black; text-align: center">Prestige waterford Price:</h2>
           <div class="row">
             <div class="col s4">
-          <div class="card">
+          <div class="card" style="box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1); border-radius: 25px;">
           <div class="row center">
-            <h5 class="header col s12 light" style="font-weight: 600;color: #311b92">1BHK</h5>
+            <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
+            <h5 class="header col s12 light" style="font-weight: 600;color: #311b92">2BHK</h5>
             <p style="color: black">Starting price</p>
-            <a class="waves-effect waves-light btn">On Request</a>
+            <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
             <div style="height:30px;"></div>
           </div>
         </div>
         </div>
         <div class="col s4">
-            <div class="card">
+            <div class="card" style="box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1); border-radius: 25px;">
             <div class="row center">
-              <h5 class="header col s12 light" style="font-weight: 600;color: #8e24aa">2BHK</h5>
+                <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
+              <h5 class="header col s12 light" style="font-weight: 600;color: #8e24aa">3BHK</h5>
                <p style="color: black"> Starting price</p>
-               <a class="waves-effect waves-light btn">On Request</a>
+               <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
                <div style="height:30px;"></div>
             </div>
           </div>
           </div>
           <div class="col s4">
-              <div class="card">
+              <div class="card" style="box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1); border-radius: 25px;">
               <div class="row center">
-                <h5 class="header col s12 light" style="font-weight: 600;color: #d81b60 ">3BHK</h5>
+                  <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
+                <h5 class="header col s12 light" style="font-weight: 600;color: #d81b60 ">4BHK</h5>
                 <p style="color: black">Starting price</p>
-                <a class="waves-effect waves-light btn">On Request</a>
+                <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
                 <div style="height:30px;"></div>
               </div>
             </div>
