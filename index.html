@@ -481,7 +481,7 @@ background-color: red;
             <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
             <h5 class="header col s12 light" style="font-weight: 600;color: #311b92">2BHK</h5>
             <p style="color: black">Starting price</p>
-            <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
             <div style="height:30px;"></div>
           </div>
         </div>
@@ -492,7 +492,7 @@ background-color: red;
                 <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
               <h5 class="header col s12 light" style="font-weight: 600;color: #8e24aa">3BHK</h5>
                <p style="color: black"> Starting price</p>
-               <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
+               <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
                <div style="height:30px;"></div>
             </div>
           </div>
@@ -503,7 +503,7 @@ background-color: red;
                   <h4 class="header col s12 light" style="font-weight: 400;color: #311b92">Unit Type:</h4>
                 <h5 class="header col s12 light" style="font-weight: 600;color: #d81b60 ">4BHK</h5>
                 <p style="color: black">Starting price</p>
-                <a class="waves-effect waves-light btn" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1" style="background-color: #ffa500;font-weight: 600;border-radius:5px;box-shadow: 1px 4px 5px 3px rgba(3, 76, 119, 1)">On Request</a>
                 <div style="height:30px;"></div>
               </div>
             </div>
@@ -581,7 +581,7 @@ background-color: red;
     </div>
   </footer>
 
-  <div id="modal1" class="modal">
+  <div  class="modal">
       <div class="modal-content">
           <form name="form3" class="form-container" validation="" onsubmit="return validateForm()">
                   
@@ -607,30 +607,39 @@ background-color: red;
 
    
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
+<<div id="modal1" class="modal">
+    <div class="modal-content">
+        <form name="form3" class="form-container" validation="" onsubmit="return validateForm()">
+                  
+            <label for="name" style="margin:14px 0px 14px 0px"><b>Name*</b></label>
+            <input type="text" name="name" class="form-control" id="em3" placeholder="Enter Your Name" required="">
+        
+        
+            <label for="email" style="margin:14px 0px 14px 0px"><b>Email*</b></label>
+            <input type="email" name="email" class="form-control" id="em4" placeholder="Enter Your Email" required="">
+        
+            <label for="psw" style="margin:14px 0px 14px 0px"><b>Phone*</b></label>
+             <input type="tel" name="phone" minlength="10" maxlength="13" class="form-control" id="num3" placeholder="Enter Your Phone" required="">
+
+           
+        </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">submit</a>
+    </div>
   </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-  </div>
-</div>
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 
   <script>
-   $(document).ready(function() {
-     setTimeout($('#modal1').modal(), 3000);
-  });
-  
-  $("#myModal").modal("show").on("shown", function () {
-    window.setTimeout(function () {
-        $("#myModal").modal("hide");
-    }, 5000);
+    $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
   });
   </script>
 
