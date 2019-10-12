@@ -10,6 +10,10 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
+.modal{
+  width:40%
+}
+
 
 p {
   line-height: 2rem;
@@ -127,7 +131,8 @@ footer.page-footer {
    }
    .modal {
     border-radius: 14px;
-    width:40%;
+    width: 80%;
+    
    }
    a.waves-effect.waves-light.btn:visited{
     background: #158140 !important;
