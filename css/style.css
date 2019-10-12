@@ -13,7 +13,19 @@ nav .brand-logo {
 .modal{
   width:40%
 }
-
+ul:not(.browser-default) > li {
+  list-style-type: square;
+    font-weight: 100;
+    word-spacing: 0px;
+    line-height: 17px;
+    color: rgba(0,0,0,0.87);
+}
+.light1 {
+  font-weight: 300;
+  text-align: justify;
+  line-height: 17px;
+  word-spacing: 0px;
+}
 
 p {
   line-height: 2rem;
