@@ -54,6 +54,9 @@ p {
     left: auto;
     right: auto;
 }
+#properly{
+  margin-top:100px;
+}
 }
 
 @media only screen and (max-width: 600px){
@@ -360,7 +363,7 @@ background-color: red;
     color: #5d5d5d;
   }
   #location{
-    margin-top: 50px;
+    margin-top: -30px;
     margin-bottom: -180px;
   }
   nav .brand-logo {
@@ -421,5 +424,13 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
   margin:40px;
 
 }
+a#download-button.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
+  background:tomato !important;
+}
+button.n.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
+  background:tomato !important;
+}
 
-
+.teal.lighten-1 {
+  background-color: #ED2A28 !important;
+}
