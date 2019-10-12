@@ -115,10 +115,7 @@ footer.page-footer {
       padding: 24px;
     background: antiquewhite;
     }
-    a.waves-effect.waves-light.btn{
-      box-shadow: 1px 1px 8px 0px #18ffff;
-    border: 1px solid blueviolet;
-    }
+   
     .modal .modal-footer .btn-flat {
     margin: 6px 0;
     background: blue;
@@ -131,8 +128,14 @@ footer.page-footer {
    .modal {
     border-radius: 14px;
    }
+   a.waves-effect.waves-light.btn:visited{
+    background: #158140 !important;
+   }
+   a.waves-effect.waves-light.btn:active{
+    background-color: pink;
+  }
    a.waves-effect.waves-light.btn:hover{
-     background: #448aff !important;
+     background: #158140 !important;
      box-shadow: #fff !important;
      color:azure;
      text-decoration:none !important;
@@ -427,10 +430,23 @@ nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
 a#download-button.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
   background:tomato !important;
 }
-button.n.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
+button.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
   background:tomato !important;
 }
 
 .teal.lighten-1 {
   background-color: #ED2A28 !important;
+}
+.teal.lighten-1:hover{
+  background: tomato;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
