@@ -358,7 +358,7 @@ background-color: red;
   .btn{
     padding: 0px;
     font-size: 12px;
-    font-weight: 200 !important;
+    font-weight: 4s00 !important;
   }
   .classic{
     width: 58px;
@@ -453,4 +453,23 @@ button.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .row .col.s3 {
+    width: 48%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+.btn {
+  padding: 0px;
+  font-size: 12px;
+  width: 103px;
+  margin-top: 19px;
+  font-weight: 400 !important;
+}
+#beauty{
+  margin-top: -50px;
+}
 }
