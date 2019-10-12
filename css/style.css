@@ -31,7 +31,7 @@ p {
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
+    
     top: 40%;
   }
   #index-banner .section {
@@ -43,6 +43,42 @@ p {
   #index-banner .section {
     top: 0;
   }
+  #logo-container1{
+    width: 71px;
+    height: 56px;
+  }
+  .row .col.s4 {
+    /* width: 33.3333333333%; */
+    width: 98%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .row .col.s6 {
+    width:98%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+#abc{
+  width:293px;
+}
+.row .col.s2 {
+  width: 40%;
+  margin-left: 10%;
+ 
+  /* left: auto; */
+  /* right: auto; */
+}
+}
+@media only screen and (max-width: 992px){
+.parallax-container .section {
+   
+    top: 40%;
+}
 }
 
 .icon-block {
@@ -55,3 +91,335 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+    label{
+      color:black;
+    }
+    nav .brand-logo {
+    color: #444;
+    font-weight: 500;
+    font-style: oblique;
+    }
+    nav ul a {
+    color: #444;
+    font-weight: 500;
+    }
+    input{
+      border-radius: 4px !important;
+      border:1px solid black !important;
+    }
+    .modal .modal-content{
+      padding: 24px;
+    background: antiquewhite;
+    }
+    a.waves-effect.waves-light.btn{
+      box-shadow: 1px 1px 8px 0px #18ffff;
+    border: 1px solid blueviolet;
+    }
+    .modal .modal-footer .btn-flat {
+    margin: 6px 0;
+    background: blue;
+    color: white;
+    border-radius: 4px;
+   }
+   .modal .modal-footer .btn-flat:hover{
+    background:cornflowerblue !important;
+   }
+   .modal {
+    border-radius: 14px;
+   }
+   a.waves-effect.waves-light.btn:hover{
+     background: #448aff !important;
+     box-shadow: #fff !important;
+     color:azure;
+     text-decoration:none !important;
+   }
+    .popup-content h3{
+  border-bottom: 1px solid #fff;
+  font-size: 1.2em;
+  margin-top:-8px;
+}
+.input-field > label {
+  padding:3px;
+}
+.button:hover{
+ text-decoration: underline;
+}
+.buttonps:hover{
+  text-decoration: underline;
+}
+a.waves-effect.waves-light.btn:hover{
+  text-decoration: underline; 
+}
+.popup{
+  left: 0;
+  position: fixed;
+  top: 25%;
+  transition: left .5s ease;
+  z-index:1000;
+}
+.popupps{
+  left: 0;
+  position: fixed;
+  top: 65%;
+  transition: left .5s ease;
+  z-index:1000;
+}
+.popup-content{
+    background-color:#1b5e20;
+    box-sizing: border-box;    
+    color: white;
+    float: left;
+    height: 200px;
+    padding: 10px;
+    width: 275px;    
+}
+
+.closepopup{
+  left: -275px;
+  
+}
+.button{
+    background-color: red;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 114px;
+    padding-top: 1.1em;
+    width: 51px;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+.button::after{
+    content:"◀";
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+.button-closed::after{
+    content:"▶";
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.buttonps{
+background-color: red;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 108px;
+    padding-top: 1em;
+    width: 51px;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+    
+}
+.btn-group button{width: 200px !important;
+    color: #fff !important;
+    padding: 5px !important;
+	background-color:#ff0000 !important}
+
+.inputGroup2 input{margin-bottom:1px !important;}
+.buttonps::after{
+    content:"◀";
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+  }
+  .input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    background-color: white;
+    border: none;
+    border: 1px solid #9e9e9e !important;
+    border-radius: 0;
+    outline: none;
+    height: 2rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+   }
+    .sidenav-overlay{
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+    #hi :hover{
+    background-color: yellow;
+   }
+ #hii{
+ 
+     font-weight: 500;
+     font-size: 20px;
+     color: #0af90afc;
+     border: 2px solid brown;
+     padding: 6px;
+     border-radius: 4px;
+     background: azure;
+     font-family: monospace;
+    }
+    .card{
+      box-shadow: 0 -2px 16px 1px rgba(0,0,0,.27);
+    }
+    #aminitiescol{
+    margin-left:83px;
+    }
+    .parallax-container{
+      color:#5d5d5d;
+    }
+    .open-button{
+      background-color: #ff3d00;
+    color: white;
+    padding: 11px 9px 9px 0px;
+    z-index: 1;
+    border: none;
+    border-radius: 2px;
+    opacity: 1.8;
+    position: fixed;
+    top: 150px;
+    width: 53px;
+    font-weight: 900;
+    text-align: inline-block;
+    height: 121px;
+    writing-mode: vertical-rl;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 7px;
+    }
+    .open-button1 {
+    background-color: #3d5afe;
+    color: white;
+    padding: 11px 9px 9px 0px;
+    z-index: 1;
+    border: none;
+    border-radius: 2px;
+    opacity: 1.8;
+    position: fixed;
+    top: 400px;
+    width: 53px;
+    font-weight: 900;
+    text-align: inline-block;
+    height: 121px;
+    writing-mode: vertical-rl;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 7px;
+    }
+    #Download{
+      writing-mode: vertical-rl;
+    }
+    @media only screen and (max-width: 600px) {
+     .vintage {
+    min-height: 614px; 
+     }
+     #trans-Form{
+       display: none;
+     }
+     #comming1{
+       width:273px;
+     }
+     #aminitiescol{
+    margin-left:0px;
+    }
+  .parallax-container .section {
+   
+    top: 0%;
+  }
+  h2{
+    font-size: 1.56rem;
+    line-height: 110%;
+    margin: 2.3733333333rem 0 1.424rem 0;
+  }
+  h4 {
+    font-size: 1.28rem;
+    line-height: 110%;
+    margin: 1.52rem 0 0.912rem 0;
+  }
+  img{
+    width:312px;
+  }
+  .btn{
+    padding: 0px;
+   
+    width: 51px;
+    font-size: 7px;
+    font-weight: 800 !important;
+  }
+  .classic{
+    width: 58px;
+    margin-left: 20px;
+
+  }
+  h5.uniform{
+    font-size: 15px;
+    color: #5d5d5d;
+  }
+  #location{
+    margin-top: 50px;
+    margin-bottom: -180px;
+  }
+  nav .brand-logo {
+    left: 49%;
+    font-size: larger;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+}
+  @media only screen and (min-width: 993px){
+.container {
+    width: 93%;
+}
+}
+.phonelink{
+  position: fixed; /* Lock location always on the scree */
+  bottom: 0; /* Set to the bottom */
+  right: 0; /* Set to the right */
+  margin: 22px; /* Add space around background */
+}
+.phoneicon{
+  width: 49px; /* Set width of icon */
+  height: 49px; /* Set height of icon */
+}
+@media screen and (max-width: 480px){
+  .lgscreenphone{
+      display: none;  /* On small screens make phone icon disappear */
+  }
+  .mbscreenphone{
+      display: block; /* On small screens make phone icon appear */
+  }
+}
+@media screen and (min-width: 481px){
+  .mbscreenphone{
+      display: none; /* On large screens make phone icon disappear */
+  }
+  .lgscreenphone{
+      display: block; /* On large screens make phone icon appear */
+  }
+ 
+  
+}
+@media only screen and (min-width: 601px){
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 70px;
+    line-height: 64px;
+}
+}
+
+#trans-Form { 
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* width: 100%; */
+  padding: 20px;
+  border-radius: 20px;
+  margin:40px;
+
+}
+
+
