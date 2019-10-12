@@ -472,4 +472,9 @@ button.btn-small.waves-effect.waves-light.teal.lighten-1:hover{
 #beauty{
   margin-top: -50px;
 }
+a.waves-effect.waves-light.btn.modal-trigger{
+  background: #158140 !important;
+  box-shadow: #fff !important;
+  text-decoration:none !important;
+}
 }
