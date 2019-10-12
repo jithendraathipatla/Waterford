@@ -13,12 +13,16 @@ nav .brand-logo {
 .modal{
   width:40%
 }
-ul:not(.browser-default) > li {
-  list-style-type: square;
+.adjust > li{
+  
+  list-style-type: none;
     font-weight: 100;
     word-spacing: 0px;
     line-height: 17px;
     color: rgba(0,0,0,0.87);
+}
+.li.adjust2{
+  list-style: square;
 }
 .light1 {
   font-weight: 300;
