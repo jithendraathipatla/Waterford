@@ -73,19 +73,18 @@
        <div class="col s12 m4" id="trans-Form">
           <h6 class="header col s12 light" style="color: White; font-weight: 700; text-align: center;margin-bottom:15px;">Contact US</h6>
           
-          <form >
-             
-            <input type="text" placeholder="Your name" style="padding-left: 5px;font-size: 13px;">
-            <input type="text" placeholder="Email" style="padding-left: 5px;font-size: 13px;">
-            <input type="text" placeholder="Phone number" style="padding-left: 5px;font-size: 13px;">
-                <select style="display:block;height:30px;padding:0px; width:102%;font-size: 13px;">
+          <form name="firstForm" action="/first_form.php" onsubmit="return validateFirstForm()" method="post">
+           <input name="firstN"type="text" placeholder="Your name" style="padding-left: 5px;font-size: 13px;" required>
+            <input name="firstE" type="email" placeholder="Email" style="padding-left: 5px;font-size: 13px;" required>
+            <input name="firstP" type="tel" placeholder="Phone number" style="padding-left: 5px;font-size: 13px;" required>
+                <select name="select" style="display:block;height:30px;padding:0px; width:102%;font-size: 13px;" required>
                   <option value="" disabled selected>Choose your option</option>
                   <option value="1">Download Cost-sheet</option>
                   <option value="2">Download Brouchere</option>
                   <option value="3">Download Both</option>
                 </select>
               <div style="margin-top:15px;">
-              <button class="btn-small waves-effect waves-light teal lighten-1" type="submit" style="background: #ED2A28 ">Submit</button>
+              <button class="btn-small waves-effect waves-light teal lighten-1" type="submit" style="background: #ED2A28" value="submit" onclick="jith()">Submit</button>
             </div>
           </form>
           </div>
@@ -125,16 +124,16 @@
 
             <p class="light1">
               <ul class="adjust">
-                <li class="adjust2">Prestige has been commemorated with India’s most trusted brand.</li>
-                <li class="adjust2">2015 award at Hotel Leela, Mumbai by IBC Info Media Corp, USA, in association with the
+                <li class="adjust2">i) Prestige has been commemorated with India’s most trusted brand.</li>
+                <li class="adjust2">ii) 2015 award at Hotel Leela, Mumbai by IBC Info Media Corp, USA, in association with the
                     International brand council.</li>
-                <li class="adjust2">Prestige Smart Kitchen has once again been awarded the &#39;Best franchisor of the year for
+                <li class="adjust2">iii) Prestige Smart Kitchen has once again been awarded the &#39;Best franchisor of the year for
                     Home/Home products&#39; award by Franchisee India in an event held at Hotel Lalit, New Delhi on
                     19th Oct 2015.</li>
-                <li class="adjust2">India&#39;s Most popular and promising Brands 2014 - Real Estate Prestige Group</li>
-                <li class="adjust2">D and damp; B Corporate Awards Top Indian Company 2014 - Real Estate
+                <li class="adjust2">iv) India&#39;s Most popular and promising Brands 2014 - Real Estate Prestige Group</li>
+                <li class="adjust2">v) D and damp; B Corporate Awards Top Indian Company 2014 - Real Estate
                     Prestige Group</li>
-                <li class="adjust2">CNBC Awaaz Real Estate Award 2013.</li>
+                <li class="adjust2">vi) CNBC Awaaz Real Estate Award 2013.</li>
               </ul>
             </p>
           </div>
@@ -359,31 +358,31 @@
              <div class="col s6">
             <div class="row">
              
-                <form class="col s12"> 
+                <form class="col s12" name="mainForm" action="./main_form.php" onsubmit="return validateForm()" method="POST" > 
                   <h5 style="color: #ED2A28">Thanks for visiting, please Write to us:</h5> 
                   
                     <div class="input-field col s12">
-                      <input  id="_name" type="text" class="validate">
+                      <input  id="_name" name="name" type="text" class="validate" required>
                       <label for="first_name">Your Name</label>
                       
                     </div>
                   
                     <div class="input-field col s12">
-                      <input  id="_name" type="number" class="validate">
+                      <input  id="_name" name="phone" type="tel" class="validate" required>
                       <label for="first_name">Phone Number</label>
                     </div>
                  
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
+                      <input id="email" name="email" type="email" class="validate" required>
                       <label for="email">Email</label>
                     </div>
                  
                       <div class="input-field col s12">
-                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <textarea id="textarea1" name="text" class="materialize-textarea" required></textarea>
                           <label for="textarea1">Textarea</label>
                       </div>
                       <div class="input-field col s12">
-                  <button class="btn-small waves-effect waves-light" type="submit" name="action" >Submit
+                  <button class="btn-small waves-effect waves-light" type="submit" value="send" onclick="mainForm_submit()">Submit
                   <i class="material-icons right">send</i>
                     </button>
                   </div>
@@ -400,7 +399,7 @@
  <footer class="page-footer teal">
     <div class="footer-copyright">
       <div class="container">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique cum blanditiis culpa consectetur doloribus maxime voluptatem debitis numquam fugiat, facilis, quam architecto, hic commodi vitae eum dicta fugit maiores.</p>
+    <p><strong>Disclaimer</strong> : Any content mentioned in this website is for information purpose only and prices are subjected to change without notice. This website is just for the purpose of information only and not be considered as an official website</p>
       </div>
     </div>
   </footer>
@@ -433,23 +432,68 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <form name="form3" class="form-container" validation="" onsubmit="return validateForm()">
+        <form name="form4" action="/modal_form.php" class="form-container"  onsubmit="return validateForm()" method="POST">
                   
             <label for="name" style="margin:14px 0px 14px 0px"><b>Name*</b></label>
-            <input type="text" name="name" class="form-control" id="em3" placeholder="Enter Your Name" required="">
+            <input type="text" name="name" class="form-control" id="em3" placeholder="Enter Your Name" required>
         
         
             <label for="email" style="margin:14px 0px 14px 0px"><b>Email*</b></label>
-            <input type="email" name="email" class="form-control" id="em4" placeholder="Enter Your Email" required="">
+            <input type="email" name="email" class="form-control" id="em4" placeholder="Enter Your Email" required>
         
             <label for="psw" style="margin:14px 0px 14px 0px"><b>Phone*</b></label>
-             <input type="tel" name="phone" minlength="10" maxlength="13" class="form-control" id="num3" placeholder="Enter Your Phone" required="">
+             <input type="tel" name="phone" minlength="10" maxlength="13" class="form-control" id="num3" placeholder="Enter Your Phone" required>
+             <div class="modal-footer" style="background: antiquewhite;">
+              <button  class=" modal-action modal-close  waves-effect waves-green btn-flat" style="background: tomato;">Close</button>
+              <button class=" modal-action  waves-effect waves-green btn-flat" onclick="modalsubmit()" type="submit" value="send">submit</button>
+            </div>
         </form>
     </div>
-    <div class="modal-footer">
-      <button  class=" modal-action modal-close  waves-effect waves-green btn-flat" style="background: tomato;">Close</button>
-      <a href="#!" class=" modal-action  waves-effect waves-green btn-flat">submit</a>
-    </div>
+   
+  </div>
+
+
+
+  <div class="closepopup popup"  >
+    <div class="popup-content">
+      <h3>Please Fill Form to Download Brochure</h3>
+     <form name="firsthard" action="./brouchere.php" method="POST" onsubmit="return validateForm()" >
+             <div id="sucess1"></div>               
+                <div class="inputGroup2">
+                  <input type="email" style="color:black" required name="email"   id="email1"/>
+                  <label for="email" style="color:white">*Email</label>
+                </div>
+                <div class="inputGroup2">
+                  <input type="number" style="color:black"  required name="phone"  id="mobile1"/>
+                  <label for="mobile" style="color:white">*Mobile</label>
+                </div>             
+                <div class="btn-group">
+                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijk" onclick="popins()">submit</button>  
+                </div>
+      </form>
+    </div>  
+    <a class="button" style="writing-mode: tb-rl;padding-right: 5px;"> Download Brochure</a>
+  </div>
+  <div class="closepopup popupps">
+    <div class="popup-content" style="
+    height:165px;">
+      <h3>Please Fill Form to Price Sheet</h3>
+      <p><form class="callRequest" id="frmps" name="secondhard" action="./cost_sheet.php" onsubmit="return validateForm()" method="POST">
+             <div id="sucess2"></div>               
+                <div class="inputGroup2">
+                  <input type="email" style="color:black"  required name="email"   id="email2"/>
+                  <label for="email" style="color:white">*Email</label>
+                </div>
+                <div class="inputGroup2">
+                  <input type="number" style="color:black"  required name="phone"  id="mobile2"/>
+                  <label for="mobile" style="color:white">*Mobile</label>
+                </div>             
+                <div class="btn-group">
+                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijkl" onclick="popins1()">submit</button>
+                </div>
+              </form> </p>
+    </div>  
+    <a class="buttonps" style="writing-mode: tb-rl;padding-right: 5px;"  > Need Price Sheet ?</a>
   </div>
 
   <!--  Scripts-->
@@ -467,93 +511,22 @@
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal-trigger').leanModal();
   });
-  </script>
 
- <div class="closepopup popup"  >
-  <div class="popup-content">
-    <h3>Please Fill Form to Download Brochure</h3>
-    <p><form class="callRequest" id="frmdb" >
-           <div id="sucess1"></div>               
-              <div class="inputGroup2">
-                <input type="email" style="color:black" required name="email"   id="email1"/>
-                <label for="email" style="color:white">*Email</label>
-              </div>
-              <div class="inputGroup2">
-                <input type="number" style="color:black"  required name="mobile"  id="mobile1"/>
-                <label for="mobile" style="color:white">*Mobile</label>
-              </div>             
-              <div class="btn-group">
-                <button style="background-color:black" class="fill-btn text-uppercase" type="submit">submit</button>
-              </div>
-            </form> </p>
-  </div>  
-  <a class="button" style="writing-mode: tb-rl;padding-right: 5px;"> Download Brochure</a>
-</div>
-<div class="closepopup popupps">
-  <div class="popup-content" style="
-  height:180px;">
-    <h3>Please Fill Form to Price Sheet</h3>
-    <p><form class="callRequest" id="frmps" >
-           <div id="sucess2"></div>               
-              <div class="inputGroup2">
-                <input type="email" style="color:black"  required name="email"   id="email2"/>
-                <label for="email" style="color:white">*Email</label>
-              </div>
-              <div class="inputGroup2">
-                <input type="number" style="color:black"  required name="mobile"  id="mobile2"/>
-                <label for="mobile" style="color:white">*Mobile</label>
-              </div>             
-              <div class="btn-group">
-                <button style="background-color:black" class="fill-btn text-uppercase" type="submit">submit</button>
-              </div>
-            </form> </p>
-  </div>  
-  <a class="buttonps" style="writing-mode: tb-rl;padding-right: 5px;"  > Need Price Sheet ?</a>
-</div>
-   
-      <script type="text/javascript">
     $(function() {      
       $('.button').on('click', function(e) {
-        $('.popup').toggleClass("closepopup"); 
+      $('.popup').toggleClass("closepopup"); 
       $('.button').toggleClass("button-closed");
-    
       e.preventDefault();      
     });
     
 
       $('.buttonps').on('click', function(e) {
-    $('.popupps').toggleClass("closepopup"); 
+      $('.popupps').toggleClass("closepopup"); 
       $('.buttonps').toggleClass("button-closed");
-    
+     
       e.preventDefault();      
     });
 });
-
-//start scrolling
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     document.getElementById("navbar").style.padding = "-50px 10px";
-//     document.getElementById("navbar").style.height = "70px";
-//     document.querySelector(".hide-on-med-and-down").style.paddingTop="10px"
-//     document.querySelector("#logo-container").style.height = "100px";
-//   } else {
-//     document.getElementById("navbar").style.padding = "0px 10px";
-//     document.getElementById("navbar").style.height = "100px";
-//     document.querySelector(".hide-on-med-and-down").style.paddingTop="-40px"
-//     document.querySelector("#logo-container1").style.height = "70px";
-//   }
-// }
-
-(function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
 </script>
     <a class="mbscreenphone phonelink" href="tel:9071354854"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
 </body>
