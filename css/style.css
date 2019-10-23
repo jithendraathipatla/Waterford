@@ -440,6 +440,10 @@ textarea.materialize-textarea {
   .modal {
     width: 80% !important;
  }
+ .popup-content h3 {
+  font-size: 1.2em;
+  margin-top: 0px;
+ }
 
   #trans-Form {
     display: none;
