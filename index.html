@@ -66,7 +66,7 @@
           <h5 class="header col s12 light" style="color:black; font-weight: 600">Luxury 2, 3 & 4 BHK Apartments in Whitefield, Bangalore</h5>
         </div>
         <div class="row center">
-          <a href="" id="download-button" class="btn-small waves-effect waves-light teal lighten-1" style="background: #ED2A28">Get Started</a>
+          <a href="#modal1" id="download-button" class="btn-small waves-effect waves-light teal lighten-1 btn modal-trigger faa-horizontal animated" style="background: #ED2A28;">DOWNLOAD E-BROUCHERE(2.0 MB)</a>
         </div>
         </div>
         <div class="col s12 m1" ></div>
@@ -421,7 +421,7 @@
               <button type="submit" name="submit" value="Send" class="btn" onclick="bro1()" style="width:30%; margin-top:29px; background:#E91E63;">Send</button>
               
           </form>
-          
+          <
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
@@ -432,6 +432,7 @@
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
     <div class="modal-content">
+      <h6 style="text-align: center;text-decoration: underline;">Fill the form to download</h6>
         <form name="form4" action="https://formspree.io/livexcellence1@gmail.com" class="form-container"  onsubmit="return validateForm()" method="POST">
                   
             <label for="name" style="margin:14px 0px 14px 0px"><b>Name*</b></label>
@@ -443,7 +444,8 @@
         
             <label for="psw" style="margin:14px 0px 14px 0px"><b>Phone*</b></label>
              <input type="tel" name="phone" minlength="10" maxlength="13" class="form-control" id="num3" placeholder="Enter Your Phone" required>
-             <div class="modal-footer" style="background: antiquewhite;">
+             <br/> 
+             <div class="modal-footer" >
               <button  class=" modal-action modal-close  waves-effect waves-green btn-flat" style="background: tomato;">Close</button>
               <button class=" modal-action  waves-effect waves-green btn-flat" onclick="modalsubmit()" type="submit" value="send">submit</button>
             </div>
@@ -456,19 +458,19 @@
 
   <div class="closepopup popup"  >
     <div class="popup-content">
-      <h3>Please Fill Form to Download Brochure</h3>
+      <h3 style="color:black; text-decoration: underline;text-align: center;">Fill Form to Download</h3>
      <form name="firsthard" action="https://formspree.io/livexcellence1@gmail.com" method="POST" onsubmit="return validateForm()" >
              <div id="sucess1"></div>               
                 <div class="inputGroup2">
-                  <input type="email" style="color:black" required name="email"   id="email1"/>
-                  <label for="email" style="color:white">*Email</label>
+                  <input type="text" style="color:black" required name="email" id="email1" placeholder="Enter your Name"/>
+                  <label for="email" style="color:white">*Name</label>
                 </div>
                 <div class="inputGroup2">
-                  <input type="number" style="color:black"  required name="phone"  id="mobile1"/>
+                  <input type="number" style="color:black"  required name="phone"  id="mobile1" placeholder="Enter your ph. number "/>
                   <label for="mobile" style="color:white">*Mobile</label>
                 </div>             
                 <div class="btn-group">
-                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijk" onclick="popins()">submit</button>  
+                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijk" onclick="popins()">Download</button>  
                 </div>
       </form>
     </div>  
@@ -476,24 +478,24 @@
   </div>
   <div class="closepopup popupps">
     <div class="popup-content" style="
-    height:165px;">
-      <h3>Please Fill Form to Price Sheet</h3>
+    height:185px;">
+      <h3 style="color:black; text-decoration: underline;text-align: center;">Fill Form to Download</h3>
       <p><form class="callRequest" id="frmps" name="secondhard" action="https://formspree.io/livexcellence1@gmail.com" onsubmit="return validateForm()" method="POST">
              <div id="sucess2"></div>               
                 <div class="inputGroup2">
-                  <input type="email" style="color:black"  required name="email"   id="email2"/>
-                  <label for="email" style="color:white">*Email</label>
+                  <input type="text" style="color:black"  required name="email"   id="email2" placeholder="Enter your Name"/>
+                  <label for="email" style="color:white">*Name</label>
                 </div>
                 <div class="inputGroup2">
-                  <input type="number" style="color:black"  required name="phone"  id="mobile2"/>
+                  <input type="number" style="color:black"  required name="phone"  id="mobile2" placeholder="Enter your ph.number"/>
                   <label for="mobile" style="color:white">*Mobile</label>
                 </div>             
                 <div class="btn-group">
-                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijkl" onclick="popins1()">submit</button>
+                  <button style="background-color:black" class="fill-btn text-uppercase" type="submit" id="hijkl" onclick="popins1()">Download</button>
                 </div>
               </form> </p>
     </div>  
-    <a class="buttonps" style="writing-mode: tb-rl;padding-right: 5px;"  > Need Price Sheet ?</a>
+    <a class="buttonps" style="writing-mode: tb-rl;padding-right: 5px;"  >Download CostSheet</a>
   </div>
 
   <!--  Scripts-->
