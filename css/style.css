@@ -285,7 +285,7 @@ a.waves-effect.waves-light.btn:hover {
 }
 
 .buttonps {
-  background-color: red;
+  background-color: #039be5;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   height: 108px;
@@ -425,8 +425,19 @@ textarea.materialize-textarea {
   border-top-right-radius: 7px;
 }
 
+.img-left{
+  width:90%;
+  height:60vh;
+}
+
 #Download {
   writing-mode: vertical-rl;
+}
+
+.containerabc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:40px
 }
 
 @media only screen and (max-width: 600px) {
@@ -434,8 +445,9 @@ textarea.materialize-textarea {
     min-height: 614px;
   }
 
-  #download-button{
+    #download-button{
     width:250px;
+    color:#ED2A28;
   }
   .modal {
     width: 80% !important;
@@ -612,6 +624,7 @@ button.btn-small.waves-effect.waves-light.teal.lighten-1:hover {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
 }
 
 @media only screen and (max-width: 600px) {
