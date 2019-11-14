@@ -6,6 +6,9 @@
   <title>Prestige Waterford | Whitefield |ITPL| Bangalore | Brochure | Floor plan | Price sheet | Locations</title>
   <meta name="description" content="Prestige Waterford upcoming new Residential Project By Prestige Group in Whitefield Bangalore. Get update Brochure, Location, Price Sheet, Reviews, Floor plan, Brochure. And Contact us for more information.">
   <!-- CSS  -->
+  <link rel="icon" href="https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Prestige-Favicon.png?fit=32%2C32&amp;ssl=1(571 B)
+https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Prestige-Favicon.png?fit=32%2C32&amp;ssl=1
+" sizes="192x192">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -51,7 +54,7 @@
         <li><a href="#navLocation">LOCATION</a></li>
           <!-- <li><a href="tel:+919071354854" id="hi"><span style="font-weight:500; font-size: 20px; color:#0af90afc" id="hii">call:9071354854</span></a></li> -->
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="display:none;"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 </div>
@@ -504,6 +507,7 @@
       $('.button').on('click', function(e) {
       $('.popup').toggleClass("closepopup"); 
       $('.button').toggleClass("button-closed");
+      $('.popupps').addClass("closepopup"); 
       e.preventDefault();      
     });
     
@@ -511,7 +515,7 @@
       $('.buttonps').on('click', function(e) {
       $('.popupps').toggleClass("closepopup"); 
       $('.buttonps').toggleClass("button-closed");
-     
+      $('.popup').addClass("closepopup");
       e.preventDefault();      
     });
 });
