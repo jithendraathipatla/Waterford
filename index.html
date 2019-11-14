@@ -36,11 +36,11 @@ https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Presti
       <!-- <img  id="logo-container" href="#" class="brand-logo" src="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/prestige-group-logo.png" alt="Prestige Waterford" id="logo" data-height-percentage="100" data-actual-width="107" data-actual-height="96"> -->
       <ul class="right hide-on-med-and-down">
           <li><a href="#">Home</a></li>
-          <li><a href="#Galleryabc">GALLERY</a></li>
-          <li><a href="#aminities">AMINITIES</a></li>
-        <li><a href="#first">FLOOR PLAN</a></li>
-        <li><a href="#last">PRICE</a></li>
-        <li><a href="#navLocation">LOCATION</a></li>
+          <li><a  id="bc">GALLERY</a></li>
+          <li><a id="cd">AMINITIES</a></li>
+        <li><a   id="de">FLOOR PLAN</a></li>
+        <li><a id="ef">PRICE</a></li>
+        <li><a id="fg">LOCATION</a></li>
       
         <!-- <li><a href="tel:+919071354854" id="hi"><span style="font-weight:500; font-size: 20px; color:#0af90afc" id="hii">call:9071354854</span></a></li> -->
       </ul>
@@ -272,6 +272,24 @@ https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Presti
          
     </div>
   </div>
+
+
+  <div class="parallax-container valign-wrapper" id="first">
+    <div class="section no-pad-bot">
+      <div class="container">
+          <div class="card">
+        <div class="row center">
+          <h5 class="header col s12 light" style="font-weight: 600;color:black">WATERFORD <span style="color:#ED2A28;font-style: italic;">Floor Plans & Master Plan</span></h5>
+          <img src="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg" srcset="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg 614w, https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1-480x188.jpg 480w" sizes="((min-width: 0px) and (max-width: 480px)) 480px, (min-width: 481px) 614px, 100vw">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div> -->
+  </div>
+  <div style="margin:10px;"></div>
+
+
 <div class="parallax-container valign-wrapper" id="last">
       <div class="section no-pad-bot">
         <div class="card">
@@ -318,21 +336,7 @@ https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Presti
       <!-- <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div> -->
     </div>
 
-  
-    <div class="parallax-container valign-wrapper" id="first">
-        <div class="section no-pad-bot">
-          <div class="container">
-              <div class="card">
-            <div class="row center">
-              <h5 class="header col s12 light" style="font-weight: 600;color:black">WATERFORD <span style="color:#ED2A28;font-style: italic;">Floor Plans & Master Plan</span></h5>
-              <img src="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg" srcset="https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1.jpg 614w, https://www.prestigewaterford.org.in/wp-content/uploads/2019/08/Coming-Soon-Project-1-480x188.jpg 480w" sizes="((min-width: 0px) and (max-width: 480px)) 480px, (min-width: 481px) 614px, 100vw">
-            </div>
-          </div>
-        </div>
-        </div>
-        <!-- <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div> -->
-      </div>
-      <div style="margin:10px;"></div>
+
 
   <div class="parallax-container valign-wrapper vintage" id="navLocation">
     <div class="section no-pad-bot">
@@ -380,7 +384,6 @@ https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Presti
                
              </div>
               </div>        
-            
       </div>
     </div>
     <div class="parallax"><img style="background: blanchedalmond;" ></div>
@@ -509,16 +512,47 @@ https://i0.wp.com/www.prestigewaterford.org.in/wp-content/uploads/2019/10/Presti
       $('.button').toggleClass("button-closed");
       $('.popupps').addClass("closepopup"); 
       e.preventDefault();      
-    });
-    
-
+     });
       $('.buttonps').on('click', function(e) {
       $('.popupps').toggleClass("closepopup"); 
-      $('.buttonps').toggleClass("button-closed");
+      $('.buttonps').toggleClass("button-closed1");
       $('.popup').addClass("closepopup");
       e.preventDefault();      
     });
 });
+
+let win = $(window).width();
+
+if(win > 420){
+  $("#bc").click(function(){
+    $("html, body" ).animate({scrollTop:900}, 'slow');
+    return false;
+  });
+ 
+  $("#cd").click(function(){
+    $("html, body" ).animate({scrollTop:1300}, 'slow');
+    return false;
+  });
+
+  $("#de").click(function(){
+    $("html, body" ).animate({scrollTop:1800}, 'slow');
+    return false;
+  });
+
+  $("#ef").click(function(){
+    $("html, body" ).animate({scrollTop:2200}, 'slow');
+    return false;
+  });
+
+  $("#fg").click(function(){
+    $("html, body" ).animate({scrollTop:2600}, 'slow');
+    return false;
+  });
+
+}
+
+
+
 </script>
     <a class="mbscreenphone phonelink" href="tel:9071354854"><img class="phoneicon" src="https://freeiconshop.com/wp-content/uploads/edd/phone-flat.png"></a>
 </body>

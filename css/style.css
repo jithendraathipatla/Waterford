@@ -283,7 +283,7 @@ a.waves-effect.waves-light.btn:hover {
 }
 
 .button::after {
-  content: "◀";
+  content: "▶";
   color: white;
   cursor: pointer;
   font-size: 1em;
@@ -291,7 +291,7 @@ a.waves-effect.waves-light.btn:hover {
 }
 
 .button-closed::after {
-  content: "▶";
+  content: "◀";
   color: white;
   cursor: pointer;
   font-size: 1em;
@@ -311,6 +311,21 @@ a.waves-effect.waves-light.btn:hover {
   animation: horizontal left 2s ease infinite;
 }
 
+.buttonps::after {
+  content: "▶";
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.button-closed1::after {
+  content: "◀";
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
 .btn-group button {
   width: 200px !important;
     color: #fff !important;
@@ -323,17 +338,8 @@ a.waves-effect.waves-light.btn:hover {
     font-size: 16px;
     border: none;
 }
-
 .inputGroup2 input {
   margin-bottom: 1px !important;
-}
-
-.buttonps::after {
-  content: "◀";
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-  padding: 5px;
 }
 
 .input:not([type]),
