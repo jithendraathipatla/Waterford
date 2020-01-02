@@ -675,7 +675,7 @@ a#nav{
     display: flex!important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-    margin-left: 14rem !important;
+    margin-left: 24rem !important;
 }
 }
 
