@@ -2,6 +2,12 @@
   .row.proper {
     margin-left: 26px !important;
 }
+
+#nowing{
+    margin-top:0px !important;
+    width: 350px;
+    padding: 17px;
+}
 .prewidth{
   width:90px !important;
 }
@@ -36,7 +42,7 @@ img.adjusting_image{
   height:855px !important;
 }
 img.nav_image{
-  margin-left:11vh !important;
+  margin-left:23vh !important;
 }
 .navbar-dark .navbar-toggler {
   display: none;
@@ -682,7 +688,7 @@ a#nav{
 }
 
 .modal-header {
-  padding-left: 9.3vh;
+  padding-left: 24.3vh;
 }
 
 .carousel-inner {
